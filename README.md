@@ -96,42 +96,163 @@ LymphAware moves the field closer to **trustworthy computational pathology** by 
 
 ---
 
-## ⚙️ Installation
+## 🚀 Training LymphAware
+
+We provide a **clean, reproducible PyTorch pipeline** located in the `src/` directory for training LymphAware across multi-center lymphoma datasets.
+
+The framework is **backbone-agnostic** and supports:
+
+* 🧠 ResNet (18 / 50 / 152)
+* 🌿 DenseNet (121)
+* 🔭 Vision Transformers (ViT-L/16)
+* 🏥 Multi-center domain training (Centers A–E)
+* 🎨 Artifact-shift augmentation for shortcut exposure
+* 📈 AUC and FPR evaluation
+
+---
+
+### 📂 Project Structure
+
+```
+LymphAware/
+│
+├── src/
+│   ├── train_lymphaware.py
+│   ├── models/
+│   ├── datasets/
+│   ├── losses/
+│   └── utils/
+│
+├── data/
+│   ├── CenterA/
+│   ├── CenterB/
+│   ├── CenterC/
+│   ├── CenterD/
+│   └── CenterE/
+│
+└── outputs/
+```
+
+Each center directory should contain class folders:
+
+```
+CenterA/
+    CLL/
+    FL/
+    MCL/
+```
+
+---
+
+### ⚙️ Installation
 
 ```bash
 git clone https://github.com/kaopanboonyuen/LymphAware.git
 cd LymphAware
+
+conda create -n lymphaware python=3.10
+conda activate lymphaware
+
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Usage
+### ▶️ Training Example
+
+Train on a specific center (e.g., Center A):
 
 ```bash
-python train.py --config configs/lymphaware.yaml
-```
-
-Example evaluation:
-
-```bash
-python evaluate.py --checkpoint checkpoints/model.pth
+python src/train_lymphaware.py \
+    --train_dir data/CenterA/train \
+    --val_dir data/CenterA/test \
+    --backbone resnet50 \
+    --epochs 100 \
+    --batch_size 16 \
+    --lr 3e-4
 ```
 
 ---
 
-## 📚 Citation
+### 🔬 Training with Vision Transformer (Best Performance)
 
-If you use this work, please cite:
-
-```bibtex
-@article{panboonyuen2026lymphaware,
-  title={LymphAware: Domain-Aware Bias Disruption for Reliable Lymphoma Cancer AI Diagnosis},
-  author={Panboonyuen, Teerapong},
-  journal={IEEE Access},
-  year={2026}
-}
+```bash
+python src/train_lymphaware.py \
+    --train_dir data/CenterA/train \
+    --val_dir data/CenterA/test \
+    --backbone vit_large_patch16_224 \
+    --epochs 100
 ```
+
+---
+
+### 💾 Outputs
+
+Training artifacts will be saved to:
+
+```
+outputs/
+    best_model.pth
+```
+
+The script automatically:
+
+✅ Tracks validation AUC
+✅ Computes False Positive Rate (FPR)
+✅ Saves the best checkpoint
+✅ Supports GPU acceleration
+
+---
+
+### 🧪 Multi-Center Reproduction (Centers A–E)
+
+To reproduce the paper results:
+
+1. Train a model per center
+2. Evaluate cross-domain performance
+3. Average metrics across runs
+
+Example loop:
+
+```bash
+for CENTER in CenterA CenterB CenterC CenterD CenterE
+do
+  python src/train_lymphaware.py \
+      --train_dir data/${CENTER}/train \
+      --val_dir data/${CENTER}/test \
+      --backbone vit_large_patch16_224
+done
+```
+
+---
+
+### ⭐ Research Tips (From the Paper)
+
+For best performance reported in IEEE Access:
+
+* Backbone: **ViT-L/16**
+* Epochs: **100**
+* Optimizer: **AdamW**
+* Learning rate: **3e-4**
+* Image size: **224 × 224**
+* Loss weight (orthogonality): **0.1**
+
+---
+
+### 🧠 Why This Training Matters
+
+Unlike standard pipelines, LymphAware training:
+
+* Disrupts shortcut bias during representation learning
+* Encourages morphology-grounded predictions
+* Improves robustness across scanners and institutions
+* Produces clinically meaningful attribution behavior
+
+> **The model learns cancer morphology — not acquisition artifacts.**
+
+---
+
+If you find this work useful, please ⭐ star the repository.
 
 ---
 
