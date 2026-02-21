@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<b>Author:</b> <b>Teerapong Panboonyuen</b><br/>
+<b></b> <b>Teerapong Panboonyuen</b><br/>
 College of Computing, Khon Kaen University<br/>
 Supported by the <i>Talent Scholarship for Exceptional Ability</i> 🌟 <br/><br/>
 
