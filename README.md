@@ -1,9 +1,14 @@
 # 🧬 LymphAware: Domain-Aware Bias Disruption for Reliable Lymphoma Cancer AI Diagnosis
 
-> **Accepted at IEEE Access (Feb 21, 2026)** 🎉
-> Author: **Teerapong Panboonyuen**
-> College of Computing, Khon Kaen University
-> Supported by the *Talent Scholarship for Exceptional Ability*
+<div align="center">
+
+<b>Author:</b> <b>Teerapong Panboonyuen</b><br/>
+College of Computing, Khon Kaen University<br/>
+Supported by the <i>Talent Scholarship for Exceptional Ability</i> 🌟 <br/><br/>
+
+<b>Accepted at IEEE Access (Feb 21, 2026)</b> 🎉
+
+</div>
 
 ---
 
