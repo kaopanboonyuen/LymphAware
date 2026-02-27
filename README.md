@@ -84,16 +84,17 @@ This work has been **peer-reviewed and accepted** for publication in *IEEE Acces
 
 ---
 
-## 📖 Official Publication & Citation
+## 📖 Official Publication
 
 <div align="center">
 
-🔗 **Read the official IEEE publication:**
-[https://ieeexplore.ieee.org/document/11408775](https://ieeexplore.ieee.org/document/11408775)
+### 🏆 IEEE Access (Early Access, February 2026)
 
-📌 **DOI:** 10.1109/ACCESS.2026.3667575
+🔗 **Official IEEE Xplore Link**  
+https://ieeexplore.ieee.org/document/11408775  
 
-Published in *IEEE Access*, Early Access, February 2026.
+📌 **DOI:**  
+10.1109/ACCESS.2026.3667575  
 
 </div>
 
