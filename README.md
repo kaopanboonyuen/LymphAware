@@ -86,8 +86,6 @@ This work has been **peer-reviewed and accepted** for publication in *IEEE Acces
 
 ## 📖 Official Publication
 
-<div align="center">
-
 ### 🏆 IEEE Access (Early Access, February 2026)
 
 🔗 **Official IEEE Xplore Link**  
@@ -95,8 +93,6 @@ https://ieeexplore.ieee.org/document/11408775
 
 📌 **DOI:**  
 10.1109/ACCESS.2026.3667575  
-
-</div>
 
 ---
 
