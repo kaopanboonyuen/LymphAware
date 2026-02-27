@@ -2,11 +2,12 @@
 
 <div align="center">
 
-<b></b> <b>Teerapong Panboonyuen</b><br/>
+<b>Teerapong Panboonyuen</b><br/>
 College of Computing, Khon Kaen University<br/>
-Supported by the <i>Talent Scholarship for Exceptional Ability</i> 🌟 <br/><br/>
+🎓 Supported by the <b>Talent Scholarship for Exceptional Ability</b><br/><br/>
 
-<b>Accepted at IEEE Access (Feb 21, 2026)</b> 🎉
+<b>Peer-Reviewed & Accepted at IEEE Access (February 2026)</b> 🎉<br/>
+DOI: 10.1109/ACCESS.2026.3667575
 
 </div>
 
@@ -80,6 +81,21 @@ Across five independent medical centers:
 </p>
 
 This work has been **peer-reviewed and accepted** for publication in *IEEE Access*, highlighting its contribution to reliable medical AI research.
+
+---
+
+## 📖 Official Publication & Citation
+
+<div align="center">
+
+🔗 **Read the official IEEE publication:**
+[https://ieeexplore.ieee.org/document/11408775](https://ieeexplore.ieee.org/document/11408775)
+
+📌 **DOI:** 10.1109/ACCESS.2026.3667575
+
+Published in *IEEE Access*, Early Access, February 2026.
+
+</div>
 
 ---
 
@@ -274,3 +290,23 @@ By enforcing morphology-grounded representations and suppressing shortcut bias, 
 ---
 
 ⭐ If you find this project useful, please consider starring the repository!
+
+---
+
+### 📚 BibTeX Citation
+
+```bibtex
+@article{panboonyuen2026lymphaware,
+  author    = {Teerapong Panboonyuen},
+  title     = {LymphAware: Domain-Aware Bias Disruption for Reliable Lymphoma Cancer AI Diagnosis},
+  journal   = {IEEE Access},
+  year      = {2026},
+  pages     = {1--1},
+  doi       = {10.1109/ACCESS.2026.3667575},
+  publisher = {IEEE}
+}
+```
+
+If you use this work in your research, please cite the official IEEE version via the DOI above.
+
+---
